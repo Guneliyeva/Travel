@@ -64,12 +64,17 @@
   padding: 20px;
 }
 
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
 
 .show {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -94,7 +99,6 @@
   width: 100%;
   height: 300px;
   border-radius: 10px 10px 0px 0px;
-
 }
 
 .travel:hover img{

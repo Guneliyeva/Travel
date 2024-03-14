@@ -1,17 +1,45 @@
 @media screen and (max-width: 768px){
     :root {
         --product-row-count: 1;
+        --product-gap: 100px
+        
     }
 
     .show #right,
     .show #left{
         display: none;
     }
+
+    .text h1{
+        font-size: 25px;
+    }
+
+    .car img{
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 100px;
+        left: 110px;
 }
+}
+
+/* 
+.show .travel{
+    flex-wrap: wrap;
+}*/
 
 
 @media screen and (max-width: 425px) {
     :root {
         --product-row-count: 1;
+    }
+
+    .show #right,
+    .show #left{
+        display: none;
+    }
+
+    .text h1{
+        font-size: 25px;
     }
 }
