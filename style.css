@@ -1,0 +1,141 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+.background {
+  background-image: url(media/background.webp);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.car {
+  position: absolute;
+  animation-name: car;
+  animation-duration: 15s;
+  animation: car 5s linear infinite;
+
+}
+
+.car img {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  top: 200px;
+  left: 220px;
+}
+
+@keyframes car {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  50% {
+    top: 0;
+    left: 200px;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.text h4 {
+  color: teal;
+  text-align: center;
+  padding: 25px;
+}
+
+.text h1 {
+  color: blue;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+}
+
+
+.show {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+:root {
+  --product-gap: 200px;
+  --product-row-count: 3;
+}
+
+.travel {
+  width: calc(100% / var(--product-row-count) - (var(--product-gap) - (var(--product-gap) / var(--product-row-count))));
+  border: 1px inset grey;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+ 
+}
+
+.travel img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.travel:hover img{
+  transform: scale(1.1);
+}
+
+
+.show .travel .about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show .travel .about h2 {
+  color: blue;
+  padding: 10px;
+}
+
+.show .travel .about #price {
+  color: teal;
+  padding: 13px;
+}
+
+.show .travel .tarix #days {
+  color: teal;
+  padding: 10px;
+}
+
+.show .travel .tarix #day {
+  color: blue;
+}
+
+.show #left {
+  font-size: 30px;
+  color: grey;
+  cursor: pointer;
+  padding: 30px;
+}
+
+.show #right {
+  font-size: 30px;
+  color: grey;
+  cursor: pointer;
+  padding: 30px;
+}

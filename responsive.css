@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px){
+    :root {
+        --product-row-count: 1;
+    }
+
+    .show #right,
+    .show #left{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    :root {
+        --product-row-count: 1;
+    }
+}
