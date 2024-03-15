@@ -5,6 +5,10 @@
         
     }
 
+    .show{
+        flex-direction: column;
+    }
+
     .show #right,
     .show #left{
         display: none;
@@ -18,7 +22,7 @@
         width: 300px;
         height: auto;
         position: absolute;
-        top: 100px;
+        top: 400px;
         left: 110px;
 }
 }
@@ -42,4 +46,12 @@
     .text h1{
         font-size: 25px;
     }
+
+    .car img{
+        width: 150px;
+        height: auto;
+        position: absolute;
+        top: 400px;
+        left: 110px;
+}
 }
